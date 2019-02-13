@@ -1,4 +1,4 @@
-package com.example.popshk;
+package com.example.popshk.controller;
 
 import com.example.popshk.domain.Message;
 import com.example.popshk.repository.MessageRepository;
@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
 
     @Autowired
         private MessageRepository messageRepository;
 
     @GetMapping("/")
-    public String greeting(String name, Map<String,Object> model) {
-        return "greeting";
+    public String greeting (Map<String,Object> model){
+            return "greeting";
     }
 
     @GetMapping("/main")
