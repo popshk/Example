@@ -47,8 +47,10 @@ public class MainController {
 
             if (!filter.isEmpty() && filter != null) {
                 messages = messageRepository.findByTag(filter);
+
             }else {
-                messages = messageRepository.findAll();
+                //messages = messageRepository.findAll();
+                    return "redirect:/main";
             }
 
         model.put("messages",messages);
