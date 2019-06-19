@@ -42,9 +42,7 @@ public class MainController {
         }else {
             messages = messageRepository.findAll();
         }
-//
 
-        //
         model.addAttribute("messages",messages);
         model.addAttribute("filter",filter);
 
@@ -82,8 +80,6 @@ public class MainController {
 
         model.put("messages",messages);
 
-        /*use this redirect, because if you update this page in browser,
-        form POST data all from previous one!!!*/
         return "redirect:/main";
     }
 }
