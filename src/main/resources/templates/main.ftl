@@ -29,7 +29,7 @@
         <strong>${message.authorName}</strong>
         <div>
             <#if message.filename??>
-                <img src="/img/${message.filename}">
+                <img src="/img/${message.filename}" width="600" height="400">
             </#if>
         </div>
     </div>
